@@ -44,16 +44,8 @@ section {
   margin: 5vh;
 }
 
-/* @font-face {
-  font-family: "Product Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/productsa...) format("woff2");
-} */
-
 h1 {
-  /* font-family: Product Sans; */
-  font-size: 5.5em;
+  font-size: 5em;
 }
 
 .my-input-container {
@@ -81,7 +73,7 @@ h1 {
 .my-button-container {
   display: flex;
   flex-direction: row;
-  padding-top: 53px;
+  padding-top: 30px;
 }
 button {
   background-color: #f8f9fa;
@@ -115,4 +107,43 @@ footer {
   justify-content: flex-end;
   margin-right: 20px;
   align-items: center;
+}
+
+@media (max-width: 630px) {
+  #footer-nav {
+    flex-direction: column;
+  }
+  #footer-left {
+    justify-content: center;
+  }
+  #footer-right {
+    justify-content: center;
+  }
+  .my-input-container {
+    width: 95vw;
+  }
+}
+
+@media (max-height: 522px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    margin-bottom: 70px;
+  }
+  footer {
+    position: relative;
+  }
+}
+
+@media (max-height: 570px) and (max-width: 630px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    margin-bottom: 70px;
+  }
+  footer {
+    position: relative;
+  }
 }
